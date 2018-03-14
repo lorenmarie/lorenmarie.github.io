@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			body {
+				background-color: #ffffff;
+				margin: 0;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<script src="http://threejsplaygnd.brangerbriz.net/js/three.min.js"></script>
+		<script src="http://threejsplaygnd.brangerbriz.net/js/Detector.js"></script>
+		<script>
+
+			if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
+			
+			var camera, scene, renderer;
+			var geometry, material, mesh;
+
+			function setup() {
+
+				var W = window.innerWidth, H = window.innerHeight;
+				renderer = new THREE.WebGLRenderer();
+				renderer.setSize( W, H );
+				document.body.appendChild( renderer.domElement );
+
+				camera = new THREE.PerspectiveCamera( 50, W/H, 1, 10000 );
+				camera.position.z = 500;
+
+				scene = new THREE.Scene();
+				
+				
+				geometry = new THREE.TorusKnotGeometry(100, 29.04, 14, 16, 1.76, 5.4, 3.28);
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+				mesh = new THREE.Mesh(geometry, material);
+				scene.add(mesh);
+				
+				geometry = new THREE.TorusKnotGeometry(65.7, 7.47, 100, 44, 1.76, 5.4, 3.28);
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+				mesh = new THREE.Mesh(geometry, material);
+				mesh.scale.x = mesh.scale.y = mesh.scale.z = 1.24;
+				mesh.rotation.x = 2.71;
+				mesh.rotation.y = 5.95;
+				mesh.rotation.z = 5.23;
+				scene.add(mesh);
+				
+				bg = document.body.style;
+				bg.background = '#181818';
+
+
+				bg = document.body.style;
+				bg.background = '#7a6262';
+								geometry = new THREE.TorusKnotGeometry(100, 1, 100, 16, 1.76, 5.4, 3.28);
+				
+				material = new THREE.MeshNormalMaterial({shading: THREE.FlatShading});
+				mesh = new THREE.Mesh(geometry, material);
+				mesh.rotation.y = 3.61;
+				mesh.rotation.z = 6.77;
+				scene.add(mesh);
+				
+				bg = document.body.style;
+				bg.background = '#181818';
+				
+
+
+
+
+			}
+
+			function draw() {
+
+				requestAnimationFrame( draw );
+				
+				mesh.rotation.x = Date.now() * 0.0001;	
+				mesh.rotation.y = Date.now() * 0.0001;	
+				mesh.rotation.z = Date.now() * 0.0001;
+
+				renderer.render( scene, camera );
+
+			}
+
+			setup();
+			draw();
+
+		</script>
+		
+	</body>
+</html>
