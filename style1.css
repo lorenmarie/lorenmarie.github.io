@@ -3,3 +3,14 @@ ul li{
 	text-decoration: none;
 		z-index: 1;
 }
+
+.container{
+	width: 50%;
+	height: auto;
+	background-color: white;
+	margin: 0 auto;
+
+}
+
+.text{
+	background-color: grey }
