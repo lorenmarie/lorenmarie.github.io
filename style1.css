@@ -1,0 +1,10 @@
+ul{
+	text-align: center;
+	background: grey;
+}
+
+ul li{
+	display: inline;
+	text-decoration: none;
+		z-index: 1;
+}
