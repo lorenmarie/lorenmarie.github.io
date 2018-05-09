@@ -1,12 +1,80 @@
 * {
 	margin: 0;
 	padding: 0;
+
 }
 
 body {
-	background-color: pink;
 	width: 100%;
 	height: 100%;
+	background-color: #fff;
+	font-family: 'Linda Console';
+
+}
+
+header {
+	background-color: black;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	position:fixed;
+	font-weight:300;
+	color:#fff;
+	z-index: 3; /* to bring the layer on top for the arrangement */
+
+}
+
+header ul {
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+}
+
+header ul li {
+	list-style-type:none;
+	display: list-item;
+	line-height: 50px;
+	padding-left: 150px;
+}
+
+header ul li a { /* for links we need additional styling */
+	color:#fff;
+	text-decoration: none;
+}
+
+p {
+	color: black;
+	padding: 20px;
+	font-size: 10pt;
+	text-decoration: none;
+	text-underline-position: none;
+}
+
+p1 {color: black;
+	padding-bottom: 80px;
+	padding-top: 80px;
+	font-size: 10pt;
+	text-align: center;
+	max-width: 70%;
+	font-weight: 50%;
+	text-decoration: none;
+}
+
+p3 {color: white;
+	padding-bottom: 80px;
+	padding-top: 80px;
+	font-size: 10pt;
+	text-align: center;
+	max-width: 70%;
+	font-weight: 50%;
+	text-decoration: none;
+}
+p4 {
+	color: white;
+	padding-bottom: 32px;
+	font-size: 10pt;
+	text-decoration: none;
+	text-underline-position: none;
 }
 
 .container{
@@ -15,27 +83,27 @@ body {
 	text-align: center;
 }
 
-h1 { font-size: 36pt;
-	color: purple;
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 50px;
+.container1{
+	width: 40%;
+	text-align: left;
+	margin: 0 auto;
 }
 
-ul {
+.container3 {
+	width: 100%;
+	margin: 0 auto;
 	text-align: center;
 
 }
 
-ul li {
-	list-style-type: none;
-	display: inline;
-	text-decoration: none;
-	z-index: 1;
-	background-color: white;
-	border: 2px solid magenta;
-	margin-right: 40px;
-	padding: 15px;
+
+#list1 {
+	padding:0;
+}
+
+#main {
+	width: 100%;
+
 }
 
 #dancer {
@@ -45,7 +113,154 @@ ul li {
 	text-align: center;
 }
 
-#sketch iframe {
+#goldcharcoal {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#me {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#processing {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	
+}
+
+#chauncey {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	padding: 20px;
+	padding-top: .01px;
+}
+
+#youtube {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	padding:50px;
+}
+
+#glitch {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+	padding: 50px;
+	padding-bottom: 5px;
+}
+
+#youtubeart {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+footer {
+	background-color: none;
 	width: 100%;
-	border: none;
+	height: auto;
+	padding-top=: 0px;
+	padding: 10px;
+	text-align: center;
+	color: black;
+	font-size: 7pt;
+}
+
+
+
+footer p{
+	padding: 20px 0;
+	color: #fff;
+	font-weight: 700;
+}	
+
+
+
+body {
+    background-color: #fff;
+    padding: 0px;
+    font-family: 'Linda Console';
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 32px;
+    text-align: left;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    column-count: 1 auto;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+   
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: black;
+    padding: none;    
+}
+.container4{
+
+	padding: 50px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+
+}
+.container3{
+	background-color: black;
+	width: 90%;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	margin-right: 0 auto;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }
