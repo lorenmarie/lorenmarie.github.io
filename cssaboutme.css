@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+	font-family: 'Raleway', sans-serif;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h1 { font-size: 36pt;
+	color: purple;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+ul {
+	text-align: center;
+
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	text-decoration: none;
+	z-index: 1;
+	background-color: white;
+	border: 2px solid magenta;
+	margin-right: 40px;
+	padding: 15px;
+}
+
+#dancer {
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#sketch iframe {
+	width: 100%;
+	border: none;
+}
